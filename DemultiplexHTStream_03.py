@@ -4,11 +4,11 @@ import argparse
 import gzip
 
 # Takes HTStream output (a tab6-formatted infile for PE or SE reads) as input, 
-# and looks for probe sequences in the read ID of the forward read 
-# (does not look for probe sequences in reverse read ID).
-# Outputs fastq.gz files, with a separate file containing reads for each probe.
+# and looks for probe names in the read ID of the forward read 
+# (does not look for probe names in reverse read ID).
+# Outputs fastq.gz files, with a separate output file containing reads for each probe.
 # Can also take a tab6-formatted infile as stdin (when piped from HTStream).
-# Probe sequences must be provided in a fasta file.
+# Probe names must be provided in a fasta file.
 # The path to an output directory can be provided.
 
 # Usage: scriptname.py infile probes [-outpath]
