@@ -3,7 +3,7 @@ import os
 import argparse
 import gzip
 
-# Takes HTStream output (a tab6-formatted infile for PE or SE reads) as input, 
+# Takes HTStream output (a tab6-formatted file for PE or SE reads) as input, 
 # and looks for probe names in the read ID of the forward read 
 # (does not look for probe names in reverse read ID).
 # Outputs fastq.gz files, with a separate output file containing reads for each probe.
