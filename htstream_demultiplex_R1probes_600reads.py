@@ -49,7 +49,7 @@ if len(tablists[0]) == 8:
             fwd.append('\n'.join(probe_reads[key][i][0:4]))
         rev=[]
         for i in range(0,len(probe_reads[key])):
-            rev.append('\n'.join(probe_reads[key][i][0:4]))
+            rev.append('\n'.join(probe_reads[key][i][4:8]))
         fwd_out = os.path.join(args.outdir, '%s_R1.fastq.gz' % (key))
         with gzip.open(fwd_out, 'wt') as probeout:
             for read in fwd:
